@@ -81,6 +81,15 @@ function App() {
                 }
               />
 
+              <Route
+                path="/admin"
+                element={
+                  <MainLayout>
+                    <OrderConfirmation />
+                  </MainLayout>
+                }
+              />
+
               {/* Admin Routes - Fixed: Using nested routes with Outlet */}
               <Route path="/admin" element={<AdminLayout />}>
                 <Route index element={<AdminDashboard />} />
