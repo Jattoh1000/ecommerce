@@ -130,6 +130,15 @@ const Navbar = () => {
                 <FiUser className="w-6 h-6" />
               </Link>
 
+              <Link
+                to="/admin"
+                id="user_icon_link"
+                name_id="user_icon_link"
+                className="text-gray-600 dark:text-gray-300 hover:text-primary-500 dark:hover:text-primary-400 transition-colors p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800"
+              >
+                <button className="bg-red-200 p-2 rounded-lg">Admin</button>
+              </Link>
+
               {/* Mobile Menu Button */}
               <button
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
